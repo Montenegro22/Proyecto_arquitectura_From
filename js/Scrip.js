@@ -19,8 +19,8 @@ function crearPelicula(obj){
 $("#BTN_CREAR").click(function(e){
     e.preventDefault();
     var id = $("#id").val();
-    var Nombre = $("#Nombre").val();
-    var Genero = $("#Genero").val();
+    var Nombre = $("#nombre").val();
+    var Genero = $("#genero").val();
     var Año = $("#Año").val();
     var Productora = $("#Productora").val();
     var Pais = $("#Pais").val();
