@@ -16,8 +16,8 @@ function crearPelicula(obj){
         }
     }); 
 }
-$("#BTN_CREAR").click(function(){
-
+$("#BTN_CREAR").click(function(e){
+    e.preventDefault();
     var id = $("#id").val();
     var Nombre = $("#Nombre").val();
     var Genero = $("#Genero").val();
