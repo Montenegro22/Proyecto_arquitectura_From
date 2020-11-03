@@ -33,19 +33,39 @@ $("#BTN_CREAR").click(function(e){
 
 
 
-
-
-
-
-
-
-
-
-
-
 //FUNCION ACTUALIZAR
-$("#BTN_ACTUALIZAR").click(function(){
+//FUNCION CREAR
+function actualizarPelicula(obj){
+    $.ajax({
+        method: 'PUT',
+        url: '/cgi-bin/Proyecto_arquitectura/App.py',
+        data: obj,
+        dataType: "json",
+        success: function(response) {
+            console.log(response)
+        },
+        error: function(response){
+            console.log("Error al actualizar pelicula")
+            console.log(JSON.stringify(response))
 
+        }
+    }); 
+}
+
+
+$("#BTN_ACTUALIZAR").click(function(){
+    e.preventDefault();
+    var id = $("#id").val();
+    var Nombre = $("#nombre").val();
+    var Genero = $("#genero").val();
+    var Año = $("#Año").val();
+    var Productora = $("#Productora").val();
+    var Pais = $("#Pais").val();
+    var Duracion = $("#Duracion").val();
+    var Idiomas = $("#Idiomas").val();
+    var Descripcion = $("#Descripcion").val();
+    var obj= {id:id,Nombre:Nombre,Genero:Genero,Año:Año,Productora:Productora,Pais:Pais,Duracion:Duracion,Idiomas:Idiomas,Descripcion:Descripcion};
+    actualizarPelicula(obj);
 
 
 
