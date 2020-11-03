@@ -52,7 +52,7 @@ function actualizarPelicula(obj){
 }
 
 
-$("#BTN_ACTUALIZAR").click(function(){
+$("#BTN_ACTUALIZAR").click(function(e){
     e.preventDefault();
     var id = $("#id").val();
     var Nombre = $("#nombre").val();
@@ -87,7 +87,7 @@ function borrarPelicula(obj){
 }
 
 
-$("#BTN_ELIMINAR").click(function(){
+$("#BTN_ELIMINAR").click(function(e){
     e.preventDefault();
     var id = $("#id").val();
     var Nombre = $("#nombre").val();
