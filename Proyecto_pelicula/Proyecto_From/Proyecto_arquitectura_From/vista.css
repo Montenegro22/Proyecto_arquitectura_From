@@ -97,7 +97,7 @@ input {
 	border-radius: 3px;
 }
 
-#login fieldset input[type="email"], #login fieldset input[type="password"],#login fieldset input[type="nombre"],
+#login fieldset input[type="id"], #login fieldset input[type="password"],#login fieldset input[type="nombre"],
 #login fieldset input[type="genero"],#login fieldset input[type="año"],
 #login fieldset input[type="pais"],#login fieldset input[type="productora"],
 #login fieldset input[type="duracion"],#login fieldset input[type="idiomas"],
